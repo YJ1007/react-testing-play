@@ -1,9 +1,7 @@
 import React from 'react';
-import Enzyme, { mount, shallow } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 import {expect} from 'chai';
-import Adapter from 'enzyme-adapter-react-16';
-
-Enzyme.configure({ adapter: new Adapter() });
+import "../setupTests.js";
 
 import App from '../App.js';
 import SearchBooks from '../components/SearchBooks.js';
